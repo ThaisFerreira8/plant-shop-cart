@@ -1,0 +1,108 @@
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.company-name {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2.5rem;
+  text-align: justify;
+}
+
+.get-started-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #2d5a27, #4a7c59);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(45, 90, 39, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(45, 90, 39, 0.4);
+  background: linear-gradient(135deg, #4a7c59, #2d5a27);
+}
+
+.get-started-btn:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .company-name {
+    font-size: 3rem;
+  }
+  
+  .company-description {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  
+  .get-started-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-page {
+    background-attachment: scroll;
+  }
+  
+  .hero-content {
+    padding: 1.5rem;
+  }
+  
+  .company-name {
+    font-size: 2.5rem;
+  }
+  
+  .company-description {
+    font-size: 1rem;
+  }
+}
